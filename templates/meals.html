@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Meals
+{% endblock %}
+
+{% block main %}
+<form action="\meals" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="name" placeholder="Names, comma-separated" type="text">
+    </div>
+    <div class="mb-3">
+        <button class="button" type="submit">Create Meal</button>
+    </div>
+</form>
+{% endblock %}
+
+
+</body>
+</html>

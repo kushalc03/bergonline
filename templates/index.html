@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    BergOnline
+{% endblock %}
+
+{% block main %}
+    <div class="container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Meal of the Day</th>
+                    <th scope="col">Calories</th>
+                    <th scope="col">Carbs</th>
+                    <th scope="col">Fat</th>
+                    <th scope="col">Protein</th>
+                    <th scope="col">Serving Size</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for line in data %}
+                    <tr>
+                        <td>{{ line[1] }}</td>
+                        <td>{{ line[3]+1 }}</td>
+                        <td>{{ line[4] }}</td>
+                        <td>{{ line[5] }}</td>
+                        <td>{{ line[6] }}</td>
+                        <td>{{ line[7] }}</td>
+                        <td>{{ line[8] }}</td>
+                    </tr>
+                {% endfor %} 
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
+
+</body>
+</html>

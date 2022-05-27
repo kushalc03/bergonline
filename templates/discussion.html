@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Discussion Board
+{% endblock %}
+
+{% block main %}
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Posts!</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for line in data %}
+                <tr>
+                    <td>{{ line[1] }}</td>
+                </tr>
+            {% endfor %} 
+        </tbody>
+    </table>
+</div>
+{% endblock %}
+
+</body>
+</html>

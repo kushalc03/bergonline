@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Post
+{% endblock %}
+
+{% block main %}
+<form action="/post" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="post" placeholder="Post" type="text">
+    </div>
+    <div class="mb-3">
+        <div class="mb-3">
+            <button class="button" type="submit">Post to Discussion Board</button>
+        </div>
+    </div>
+</form>
+{% endblock %}
+
+</body>
+</html>
